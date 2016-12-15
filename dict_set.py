@@ -1,0 +1,31 @@
+di={'A':65,'B':66,'C':67}
+print(di['A'])
+#如果C存在则返回其value
+print(di.get('C',111))
+#删除C
+if 'C' in di:
+	di.pop('C')
+print(di)
+#如果C不存在则返回'C不存在'
+print(di.get('C','C不存在'))
+#dict变量输出是无序的！
+#创建set
+s=set(['A','B','C'])
+print(s)
+#添加D
+s.add('D')
+print(s)
+#删除D
+s.remove('D')
+print(s)
+#set做集合运算
+ss=set(['B','C','D'])
+print(ss&s,ss|s)
+#list的排序
+l=[3,2,1]
+l.sort()
+print(l)
+#str.replace()
+str='abc'
+print(str.replace('a','A'))
+print(str)
